@@ -2668,7 +2668,7 @@ func_176209_a,canCollideCheck,2,
 func_176210_f,getStateId,2,"Get a unique ID for the given BlockState, containing both BlockID and metadata"
 func_176211_b,getStrongPower,2,
 func_176212_b,isBlockSolid,2,Whether this Block is solid on the given Side
-func_176213_c,onBlockAdded,2,
+func_176213_c,onBlockAdded,2,"Called after the block is set in the Chunk data, but before the Tile Entity is set"
 func_176214_u,isVisuallyOpaque,2,
 func_176215_a,registerBlock,2,
 func_176216_a,onLanded,2,Called when an Entity lands on this Block. This method *must* update motionY because the entity will not do that on its own
@@ -3079,10 +3079,10 @@ func_177497_p,getLightBrightnessTable,2,
 func_177499_m,getBiomeProvider,2,
 func_177500_n,doesWaterVaporize,2,
 func_177501_r,createWorldBorder,2,
-func_177507_b,getTileEntity,2,
+func_177507_b,getTileEntity,2,"Gets the tile entity as currently held, or (if it has not gotten it from the world) loads it from the world."
 func_177508_d,getPos,2,
-func_177509_a,getBlockState,2,
-func_177510_a,hasState,2,
+func_177509_a,getBlockState,2,"Gets the block state as currently held, or (if it has not gotten it from the world) loads it from the world.\n This will only look up the state from the world if {@link #field_181628_c} is true or the block position is loaded."
+func_177510_a,hasState,2,Creates a new {@link Predicate} that will match when the given {@link IBlockState} predicate matches.
 func_177516_a,splitObjectName,2,"Splits an object name (such as minecraft:apple) into the domain and path parts and returns these as an array of length 2. If no colon is present in the passed value the returned array will contain {null, toSplit}."
 func_177517_b,parsePathString,0,
 func_177518_c,getVariant,0,
@@ -3135,7 +3135,7 @@ func_177648_a,addGeneralQuad,0,
 func_177650_a,addFaceQuad,0,
 func_177657_d,checkMissingPredicates,2,
 func_177658_c,makePredicateArray,2,
-func_177659_a,aisle,2,
+func_177659_a,aisle,2,"Adds a single aisle to this pattern, going in the z axis. (so multiple calls to this will increase the z-size by 1)\n \n@param aisle The pattern to add for a single aisle. This is in the y axis (array index) and then in the x axis (string contents), where each block position is given by a single char in the string."
 func_177660_a,start,2,
 func_177661_b,build,2,
 func_177662_a,where,2,
@@ -4016,7 +4016,7 @@ func_180286_a,getGrassColorAtPos,0,
 func_180287_b,getFoliageColorAtPos,0,
 func_180288_c,getWaterColorAtPos,0,
 func_180292_a,decorate,2,
-func_180300_a,getBiomeGenerator,2,
+func_180300_a,getBiome,2,
 func_180302_a,addRecipe,2,Adds an IRecipe to the list of crafting recipes.
 func_180303_b,getRemainingItems,2,
 func_180305_b,getEnchantmentByLocation,2,Retrieves an enchantment by using its location name.
@@ -4105,7 +4105,7 @@ func_180485_d,isWithinHomeDistanceFromPosition,2,
 func_180486_cf,getHomePosition,2,
 func_180487_n,getParticleType,2,
 func_180489_a,spawnParticles,0,
-func_180494_b,getBiomeGenForCoords,2,
+func_180494_b,getBiome,2,
 func_180495_p,getBlockState,2,
 func_180496_d,notifyBlockOfStateChange,2,
 func_180497_b,scheduleBlockUpdate,2,
@@ -4165,7 +4165,7 @@ func_180627_b,getGrassColorAtPos,0,
 func_180628_b,generateBiomeTerrain,2,"Given x, z coordinates, we count down all the y positions starting at 255 and working our way down. When we hit a non-air block, we replace it with this.topBlock (default grass, descendants may set otherwise), and then a relatively shallow layer of blocks of type this.fillerBlock (default dirt). A random set of blocks below y == 5 (but always including y == 0) is replaced with bedrock.\n \nIf we don't hit non-air until somewhat below sea level, we top with gravel and fill down with stone.\n \nIf this.fillerBlock is red sand, we replace some of that with red sandstone."
 func_180629_a,getBand,2,
 func_180630_a,findBiomePosition,2,
-func_180631_a,getBiomeGenerator,2,Returns the biome generator
+func_180631_a,getBiome,2,Returns the biome generator
 func_180632_j,setDefaultState,2,
 func_180633_a,onBlockPlacedBy,2,"Called by ItemBlocks after a block is set in the world, to allow post-place logic"
 func_180634_a,onEntityCollidedWithBlock,2,Called When an Entity Collided with the Block
@@ -4192,7 +4192,7 @@ func_180658_a,onFallenUpon,2,Block's chance to react to a living entity falling 
 func_180659_g,getMapColor,2,Get the MapColor for this Block and the given BlockState
 func_180660_a,getItemDropped,2,Get the Item that this Block should drop when harvested.
 func_180661_e,createBlockState,2,
-func_180663_b,breakBlock,2,
+func_180663_b,breakBlock,2,"Called serverside after this block is replaced with another in Chunk, but before the Tile Entity is updated"
 func_180664_k,getBlockLayer,0,
 func_180666_a,updateState,2,Updates the pressure plate when stepped on
 func_180669_e,computeRedstoneStrength,2,
@@ -4286,7 +4286,7 @@ func_181072_c,getMapColor,2,
 func_181074_c,getMapColor,2,
 func_181076_a,getFacingFromAxis,2,
 func_181078_a,areItemStacksExactlyEqual,2,
-func_181079_c,set,2,Set the values
+func_181079_c,setPos,2,"Sets the position, MUST not be name 'set' as that causes obfusication conflicts with func_185343_d"
 func_181086_a,isInvalidNeighbor,2,
 func_181087_e,hasInvalidNeighbor,2,
 func_181088_a,canPlaceBlock,2,Check whether this block can be placed on the block in the given direction.
@@ -4964,7 +4964,7 @@ func_185170_a,getEffects,2,
 func_185171_a,getID,2,
 func_185172_c,hasInstantEffect,0,
 func_185173_a,registerPotionType,2,
-func_185174_b,getNamePrefixed,2,
+func_185174_b,getNamePrefixed,2,"Gets the name of this PotionType with a prefix (such as ""Splash"" or ""Lingering"") prepended"
 func_185175_b,registerPotionTypes,2,
 func_185181_a,getPotionColorFromEffectList,2,
 func_185182_a,addPotionTooltip,0,
@@ -5170,7 +5170,7 @@ func_185918_c,getSelectedBoundingBox,0,
 func_185919_a,validateProperty,2,
 func_185920_a,getProperty,0,
 func_185922_a,getFingerLength,2,
-func_185925_a,hasState,2,
+func_185925_a,hasState,2,Creates a new {@link Predicate} that will only match the given block state.\n \n@param blockState The block state to check for.
 func_185927_a,matches,2,
 func_185929_b,parseValue,0,
 func_185931_b,populate,2,
@@ -5304,7 +5304,7 @@ func_186238_c,writeTemplate,2,writes the template to an external folder
 func_186239_a,readTemplateFromStream,2,reads a template from an inputstream
 func_186252_a,setAuthor,2,
 func_186253_b,addBlocksToWorld,2,This takes the data stored in this instance and puts them into the world.
-func_186254_a,takeBlocksFromWorld,2,takes blocks from the world and puts the data them into this template
+func_186254_a,takeBlocksFromWorld,2,takes blocks from the world and puts the data them into this template\n \n@param toIgnore The block type that will not be recorded. Use null if you want to record all blocks.
 func_186255_a,takeEntitiesFromWorld,2,takes blocks from the world and puts the data them into this template
 func_186256_b,read,2,
 func_186257_a,transformedSize,2,
@@ -6132,6 +6132,61 @@ func_189210_b,getPosFromArguments,2,
 func_189211_a,getCoordinate,2,
 func_189213_a,onUpdate,0,
 func_189214_a,getBrightnessForRender,0,
+func_189404_a,setLootTable,2,
+func_189416_e,getToughness,2,
+func_189418_a,getContainer,2,
+func_189419_a,createDispenser,2,
+func_189423_a,readLongArray,0,
+func_189424_c,readVarIntArray,2,
+func_189425_b,readByteArray,2,
+func_189427_a,getDamageAfterAbsorb,2,
+func_189428_b,setAttackCooldown,2,
+func_189507_a,immediateBlockTick,2,
+func_189508_F,getPendingTileEntityAt,2,
+func_189509_E,isOutsideBuildHeight,2,
+func_189510_a,writeToNBT,2,
+func_189511_e,writeToNBT,2,
+func_189512_bd,getCachedUniqueIdString,2,
+func_189514_c,create,2,
+func_189515_b,writeToNBT,2,
+func_189516_d,writeInternal,2,
+func_189517_E_,getUpdateTag,2,
+func_189518_D_,getUpdatePacket,2,
+func_189520_a,stop,0,
+func_189529_a,setDetail,2,
+func_189530_b,writeToNBT,2,
+func_189532_c,setPos,2,
+func_189533_g,setPos,2,
+func_189534_c,move,2,
+func_189535_a,setPos,0,
+func_189536_c,move,2,
+func_189537_c,set,0,
+func_189538_d,movePos,2,
+func_189539_a,eventReceived,2,"Called on both Client and Server when World#addBlockEvent is called. On the Server, this may perform additional changes to the world, like pistons replacing the block with an extended base. On the client, the update may involve replacing tile entities, playing sounds, or performing other visual actions to reflect the server side changes.\n \n@param state The block state retrieved from the block position prior to this method being invoked\n@param pos The position of the block event. Can be used to retrieve tile entities."
+func_189540_a,neighborChanged,2,"Called when a neighboring block was changed and marks that this state should perform any checks during a neighbor change. Cases may include when redstone power is updated, cactus blocks popping off due to a neighboring solid block, etc."
+func_189541_b,updateState,2,
+func_189542_i,getDepth,2,
+func_189543_a,getFlow,2,
+func_189544_a,getSlopeAngle,0,
+func_189545_x,getRenderedDepth,2,
+func_189546_a,neighborChanged,2,"Called when a neighboring block was changed and marks that this state should perform any checks during a neighbor change. Cases may include when redstone power is updated, cactus blocks popping off due to a neighboring solid block, etc."
+func_189547_a,onBlockEventReceived,2,"Called on both Client and Server when World#addBlockEvent is called. On the Server, this may perform additional changes to the world, like pistons replacing the block with an extended base. On the client, the update may involve replacing tile entities, playing sounds, or performing other visual actions to reflect the server side changes.\n \n@param worldIn The world the block event is taking place in\n@param pos The position of the block event taking place"
+func_189548_a,getLoadedChunks,2,
+func_189549_a,unload,2,Unloads a chunk
+func_189551_b,writeToNBT,2,
+func_189552_a,writeToNBT,2,
+func_189553_b,getPathNodeTypeRaw,2,
+func_189554_f,getTileEntityTags,0,
+func_189555_a,extractChunkData,2,
+func_189556_a,calculateChunkSize,2,
+func_189559_a,doTransparencyHack,0,
+func_189560_a,hasDirection,0,
+func_189561_a,setDirection,0,
+func_189562_a,setPosition,0,Sets the RenderChunk base position
+func_189563_q,resetChunkCache,0,
+func_189565_a,create,0,
+func_189566_q,getNodeProcessor,2,
+func_189567_a,stop,0,
 func_70000_a,addServerStatsToSnooper,2,
 func_70001_b,addServerTypeToSnooper,2,
 func_70002_Q,isSnooperEnabled,2,Returns whether snooping is enabled or not.
@@ -6564,7 +6619,7 @@ func_71263_m,initiateShutdown,2,"Sets the serverRunning variable to false, in or
 func_71264_H,isSinglePlayer,2,
 func_71265_f,getGameType,2,
 func_71266_T,isServerInOnlineMode,2,
-func_71267_a,saveAllWorlds,2,par1 indicates if a log message should be output.
+func_71267_a,saveAllWorlds,2,"par1 indicates if a log message should be output.\n \n@param isSilent If false, log the fact that the worlds are saving."
 func_71268_U,getCanSpawnAnimals,2,
 func_71270_I,getFolderName,2,
 func_71273_Y,getMOTD,2,
@@ -6840,7 +6895,7 @@ func_72960_a,setEntityState,2,sends a Packet 38 (Entity Status) to all tracked p
 func_72963_a,initialize,2,
 func_72964_e,getChunkFromChunkCoords,2,Gets the chunk at the specified location.
 func_72966_v,calculateInitialSkylight,2,Called on construction of the World class to setup the initial skylight values
-func_72967_a,calculateSkylightSubtracted,2,Returns the amount of skylight subtracted for the current time
+func_72967_a,calculateSkylightSubtracted,2,"Returns the amount of skylight subtracted for the current time\n \n@param partialTicks The interpolation value between last tick and this tick. 0.0 is the value of the last tick, 1.0 is the value of this tick and other values interpolate between the two."
 func_72970_h,createChunkProvider,2,Creates the chunk provider for this world. Called in the constructor. Retrieves provider from worldProvider?
 func_72971_b,getSunBrightness,0,"Returns the sun brightness - checks time of day, rain and thunder"
 func_72973_f,removeEntityDangerously,2,Do NOT use this method to remove normal entities- use normal removeEntity
@@ -7567,10 +7622,10 @@ func_76797_b,generateOres,2,Generates ores in the current chunk
 func_76838_a,cleanupCache,2,Removes BiomeCacheBlocks from this cache that haven't been accessed in at least 30 seconds.
 func_76839_e,getCachedBiomes,2,Returns the array of cached biome types in the BiomeCacheBlock at the given location.
 func_76840_a,getBiomeCacheBlock,2,Returns a biome cache block at location specified.
-func_76885_a,getBiomeGenAt,2,"Returns the BiomeGenBase related to the x, z position from the cache block."
-func_76931_a,getBiomeGenAt,2,Gets a list of biomes for the specified blocks.
+func_76885_a,getBiome,2,"Returns the BiomeGenBase related to the x, z position from the cache block."
+func_76931_a,getBiomes,2,Gets a list of biomes for the specified blocks.
 func_76932_a,getBiomesToSpawnIn,2,Gets the list of valid biomes for the player to spawn in.
-func_76933_b,loadBlockGeneratorData,2,Gets biomes to use for the blocks and loads the other data like temperature and humidity onto the WorldChunkManager.
+func_76933_b,getBiomes,2,Gets biomes to use for the blocks and loads the other data like temperature and humidity onto the WorldChunkManager.
 func_76937_a,getBiomesForGeneration,2,Returns an array of biomes for the location input.
 func_76938_b,cleanupCache,2,Calls the WorldChunkManager's biomeCache.cleanupCache()
 func_76939_a,getTemperatureAtHeight,2,Return an adjusted version of a given temperature based on the y height
