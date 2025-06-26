@@ -4,53 +4,30 @@ import { Progress } from "@/components/ui/progress"
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Low-Level Development",
       skills: [
-        { name: "React", level: 95, years: "4+ years", description: "Advanced component architecture & hooks" },
-        { name: "Next.js", level: 90, years: "3+ years", description: "SSR, SSG, API routes & optimization" },
-        { name: "TypeScript", level: 88, years: "3+ years", description: "Type-safe development & advanced types" },
-        { name: "JavaScript", level: 92, years: "5+ years", description: "ES6+, async/await, modern patterns" },
-        { name: "Tailwind CSS", level: 85, years: "2+ years", description: "Utility-first styling & custom designs" },
-        { name: "HTML5/CSS3", level: 90, years: "5+ years", description: "Semantic markup & responsive design" },
-      ],
+        { name: "Java", level: 100, years: "6+ years", description: "Advanced Java ASM manipulation and JVM tricks." },
+        { name: "C", level: 95, years: "1+ year", description: "Advanced knowledge of C, it's concepts and how to write optimized code with it" },
+        { name: "Assembly", level: 65, years: "5+ months", description: "Understanding of the instruction sets, registers and general Assembly code" },
+        { name: "x86 Machine Code", level: 45, years: "2+ months", description: "Writing of an custom Assembler for the x86 architecture, understanding of registers, ModRM bytes, REX prefixes, and instructions" },
+      ]
     },
     {
-      title: "Backend Development",
+      title: "Other Backend Development",
       skills: [
-        { name: "Node.js", level: 87, years: "4+ years", description: "Server-side JavaScript & microservices" },
-        { name: "Express.js", level: 85, years: "3+ years", description: "RESTful APIs & middleware development" },
-        { name: "PostgreSQL", level: 80, years: "3+ years", description: "Complex queries & database optimization" },
-        { name: "MongoDB", level: 75, years: "2+ years", description: "NoSQL design & aggregation pipelines" },
-        { name: "GraphQL", level: 70, years: "2+ years", description: "Schema design & query optimization" },
-        { name: "Python", level: 78, years: "3+ years", description: "Django, FastAPI & data processing" },
+        { name: "Java", level: 100, years: "6+ years", description: "Advanced Java ASM manipulation and JVM tricks." },
+        { name: "Python", level: 75, years: "1+ year", description: "Used Python to write toolchains for various amounts of my projects." },
+        { name: "NodeJS / Typescript", level: 35, years: "1+ year (Not Actively coding)", description: "Usage of NodeJS to write APIs for my various projects" },     
+        { name: "Express.js", level: 85, years: "1+ years", description: "Usage of Express to write APIs for my various projects." }
       ],
     },
     {
       title: "Tools & DevOps",
       skills: [
-        { name: "Git", level: 90, years: "5+ years", description: "Version control & collaborative workflows" },
-        { name: "Docker", level: 75, years: "2+ years", description: "Containerization & deployment" },
-        { name: "AWS", level: 70, years: "2+ years", description: "EC2, S3, Lambda & cloud architecture" },
-        { name: "Vercel", level: 85, years: "2+ years", description: "Deployment & serverless functions" },
-        { name: "Jest", level: 80, years: "3+ years", description: "Unit testing & test-driven development" },
-        { name: "Webpack/Vite", level: 75, years: "2+ years", description: "Build tools & optimization" },
+        { name: "Git", level: 100, years: "5+ years", description: "Version control & collaborative workflows" },
+        { name: "Vercel", level: 85, years: "2+ years", description: "Deployment & serverless functions" }
       ],
-    },
-    {
-      title: "Design & UX",
-      skills: [
-        { name: "Figma", level: 82, years: "3+ years", description: "UI/UX design & prototyping" },
-        {
-          name: "Responsive Design",
-          level: 90,
-          years: "4+ years",
-          description: "Mobile-first & cross-browser compatibility",
-        },
-        { name: "Accessibility", level: 85, years: "3+ years", description: "WCAG compliance & inclusive design" },
-        { name: "User Experience", level: 80, years: "3+ years", description: "User research & interaction design" },
-        { name: "Design Systems", level: 78, years: "2+ years", description: "Component libraries & style guides" },
-      ],
-    },
+    }
   ]
 
   const getSkillColor = (level: number) => {
@@ -127,15 +104,15 @@ export function Skills() {
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">6+</div>
                 <div className="text-gray-900 font-semibold mb-1">Years Experience</div>
-                <div className="text-sm text-gray-600">In web development</div>
+                <div className="text-sm text-gray-600">In backend development</div>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-green-600 mb-2">20+</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                 <div className="text-gray-900 font-semibold mb-1">Technologies</div>
                 <div className="text-sm text-gray-600">Actively working with</div>
               </CardContent>
@@ -143,7 +120,7 @@ export function Skills() {
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">200+</div>
                 <div className="text-gray-900 font-semibold mb-1">Projects Completed</div>
                 <div className="text-sm text-gray-600">Across various industries</div>
               </CardContent>

@@ -10,8 +10,8 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Image
-              src="/placeholder.svg?height=200&width=200"
-              alt="John Doe - Full Stack Developer"
+              src="/logo.jpeg"
+              alt="Zffu - Backend Developer"
               width={200}
               height={200}
               className="rounded-full mx-auto mb-8 shadow-lg"
@@ -21,16 +21,15 @@ export function Hero() {
 
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">John Doe</span>
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Zffu</span>
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-gray-600 mb-8 font-light">
-            Full Stack Developer & UI/UX Enthusiast
+            Backend Developer in low-level
           </h2>
 
           <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I craft exceptional digital experiences with modern technologies. Specializing in React, Next.js, and
-            Node.js to build scalable web applications that users love and businesses need.
+            I craft exceptional, optimized digital projects, ranging from programming languages to kernels and even custom Assemblers!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -47,21 +46,14 @@ export function Hero() {
 
           <div className="flex justify-center space-x-6 mb-12">
             <Link
-              href="https://github.com/johndoe"
+              href="https://github.com/Zffu"
               className="text-gray-600 hover:text-gray-900 transition-colors"
               aria-label="GitHub Profile"
             >
               <Github className="h-6 w-6" />
             </Link>
             <Link
-              href="https://linkedin.com/in/johndoe"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
-              aria-label="LinkedIn Profile"
-            >
-              <Linkedin className="h-6 w-6" />
-            </Link>
-            <Link
-              href="mailto:john@johndoe.dev"
+              href="mailto:zffu@zffu.dev"
               className="text-gray-600 hover:text-gray-900 transition-colors"
               aria-label="Email Contact"
             >

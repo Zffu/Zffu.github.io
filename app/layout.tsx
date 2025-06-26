@@ -8,30 +8,27 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://johndoe.dev"),
+  metadataBase: new URL("https://zffu.dev"),
   title: {
-    default: "John Doe - Full Stack Developer | React, Next.js, Node.js",
-    template: "%s | John Doe - Full Stack Developer",
+    default: "Zffu - Low-Level Backend Developer | C, Assembly",
+    template: "%s | Zffu - Low-Level Backend Developer | C",
   },
   description:
-    "Experienced full stack developer specializing in React, Next.js, and Node.js. Creating modern web applications with clean code and exceptional user experiences.",
+    "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
   keywords: [
-    "full stack developer",
-    "react developer",
-    "next.js developer",
-    "node.js developer",
-    "javascript developer",
-    "typescript developer",
-    "web development",
-    "frontend developer",
     "backend developer",
-    "UI/UX developer",
-    "San Francisco developer",
-    "freelance developer",
+    "low-level developer",
+    "experienced developer",
+    "C developer",
+    "Assembly developer",
+    "kernel developer",
+    "kernel development",
+    "machine Code developer",
+    "backend developer"
   ],
-  authors: [{ name: "John Doe", url: "https://johndoe.dev" }],
-  creator: "John Doe",
-  publisher: "John Doe",
+  authors: [{ name: "Zffu", url: "https://zffu.dev" }],
+  creator: "Zffu",
+  publisher: "Zffu",
   formatDetection: {
     email: false,
     address: false,
@@ -40,24 +37,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://johndoe.dev",
-    title: "John Doe - Full Stack Developer",
-    description: "Experienced full stack developer specializing in React, Next.js, and Node.js.",
-    siteName: "John Doe Portfolio",
+    url: "https://zffu.dev",
+    title: "Zffu - Low-Level Backend Developper",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    siteName: "Zffu Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "John Doe - Full Stack Developer",
+        alt: "Zffu - Low-Level Backend Developper",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "John Doe - Full Stack Developer",
-    description: "Experienced full stack developer specializing in React, Next.js, and Node.js.",
-    creator: "@johndoe",
+    title: "Zffu - Low-Level Backend Developper",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    creator: "@zffumc",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -87,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://johndoe.dev" />
+        <link rel="canonical" href="https://zffu.dev" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="color-scheme" content="light" />
       </head>

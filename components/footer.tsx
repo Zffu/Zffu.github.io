@@ -11,27 +11,20 @@ export function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand */}
             <div>
-              <h3 className="text-2xl font-bold mb-4">John Doe</h3>
+              <h3 className="text-2xl font-bold mb-4">Zffu</h3>
               <p className="text-gray-400 mb-4">
-                Full Stack Developer passionate about creating exceptional digital experiences.
+                Backend Developer passionate about creating exceptional and efficient projects
               </p>
               <div className="flex space-x-4">
                 <Link
-                  href="https://github.com/johndoe"
+                  href="https://github.com/Zffu"
                   className="text-gray-400 hover:text-white transition-colors"
                   aria-label="GitHub Profile"
                 >
                   <Github className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="https://linkedin.com/in/johndoe"
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link
-                  href="mailto:john@johndoe.dev"
+                  href="mailto:zffu@zffu.dev"
                   className="text-gray-400 hover:text-white transition-colors"
                   aria-label="Email Contact"
                 >
@@ -71,19 +64,16 @@ export function Footer() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <li>API Development</li>
-                <li>Technical Consulting</li>
+                <li>Bakckend Development</li>
+                <li>Low-Level Development</li>
+                <li>Kernel Development</li>
+                <li>Assembly Development</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {currentYear} John Doe. All rights reserved.</p>
-            <p className="text-gray-400 text-sm flex items-center">
-              Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> using Next.js & Tailwind CSS
-            </p>
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">© {currentYear} Zffu. All rights reserved.</p>
           </div>
         </div>
       </div>

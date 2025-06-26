@@ -6,27 +6,27 @@ import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 
 export const metadata: Metadata = {
-  title: "John Doe - Full Stack Developer | React, Next.js, Node.js",
+  title: "Zffu | Backend Low-Level Developer",
   description:
-    "Experienced full stack developer specializing in React, Next.js, and Node.js. Creating modern web applications with clean code and exceptional user experiences.",
+    "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
   keywords:
-    "full stack developer, react developer, next.js, node.js, javascript, typescript, web development, frontend, backend",
-  authors: [{ name: "John Doe" }],
-  creator: "John Doe",
-  publisher: "John Doe",
+    "backend developer, C, assembly, machine code, C developer, machine code developer, Assembly developer",
+  authors: [{ name: "Zffu" }],
+  creator: "Zffu",
+  publisher: "Zffu",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://johndoe.dev",
-    title: "John Doe - Full Stack Developer",
-    description: "Experienced full stack developer specializing in React, Next.js, and Node.js.",
-    siteName: "John Doe Portfolio",
+    url: "https://zffu.dev",
+    title: "Zffu - Low-Level Backend Developer",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    siteName: "Zffu Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "John Doe - Full Stack Developer",
-    description: "Experienced full stack developer specializing in React, Next.js, and Node.js.",
-    creator: "@johndoe",
+    title: "Zffu - Low-Level Backend Developer",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    creator: "@zffumc",
   },
   robots: {
     index: true,
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "John Doe",
-  jobTitle: "Full Stack Developer",
-  description: "Experienced full stack developer specializing in React, Next.js, and Node.js",
-  url: "https://johndoe.dev",
-  sameAs: ["https://github.com/johndoe", "https://linkedin.com/in/johndoe", "https://twitter.com/johndoe"],
-  knowsAbout: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Full Stack Development", "Web Development"],
+  name: "Zffu",
+  jobTitle: "Backend & Low-Level Developer",
+  description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+  url: "https://zffu.dev",
+  sameAs: ["https://github.com/Zffu"],
+  knowsAbout: ["JavaScript", "TypeScript", "Backend Developpment", "C", "Assembly", "x86", "Machine Code", "Python", "Java"],
 }
 
 export default function Home() {
