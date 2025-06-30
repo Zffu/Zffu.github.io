@@ -204,7 +204,7 @@ export function Projects() {
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow group">
                 <div className="relative overflow-hidden">
                   <Image
-                    src={project.image || "placeholder.jpg"}
+                    src={project.image || "placeholder.webp"}
                     alt={`${project.title} screenshot`}
                     width={500}
                     height={300}
@@ -214,7 +214,7 @@ export function Projects() {
                     <Button size="sm" asChild>
                     </Button>
                     <Button size="sm" variant="outline" className="bg-white text-black hover:bg-gray-100" asChild>
-                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Link href={project.githubUrl} target="_blank" rel="nofollow noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </Link>
@@ -253,7 +253,7 @@ export function Projects() {
                       <Link
                         href={project.githubUrl}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-gray-600 hover:text-gray-900 transition-colors"
                         aria-label={`View ${project.title} source code`}
                       >

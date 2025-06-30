@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Zffu - Low-Level Backend Developer | C",
   },
   description:
-    "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code! I also do Java and Spigot projects and a lot of Minecraft related ones as well.",
   keywords: [
     "backend developer",
     "low-level developer",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://zffu.dev",
     title: "Zffu - Low-Level Backend Developper",
-    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code! I also do Java and Spigot projects and a lot of Minecraft related ones as well.",
     siteName: "Zffu Portfolio",
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Zffu - Low-Level Backend Developper",
-    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code! I also do Java and Spigot projects and a lot of Minecraft related ones as well.",
     creator: "@zffumc",
     images: ["/og-image.jpg"],
   },
@@ -72,8 +72,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
-  },
-    generator: 'v0.dev'
+  }
 }
 
 export default function RootLayout({

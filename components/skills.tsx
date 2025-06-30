@@ -69,9 +69,9 @@ export function Skills() {
                     <div key={skillIndex} className="space-y-2">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <h4 className="font-semibold text-gray-900">{skill.name}</h4>
+                          <h4 className="font-semibold noselect text-gray-900">{skill.name}</h4>
                           <span
-                            className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            className={`px-2 py-1 noselect rounded-full text-xs font-medium ${
                               skill.level >= 90
                                 ? "bg-green-100 text-green-800"
                                 : skill.level >= 80
@@ -85,14 +85,14 @@ export function Skills() {
                           </span>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <span className="text-sm text-gray-500">{skill.years}</span>
-                          <span className="text-sm font-medium text-gray-900">{skill.level}%</span>
+                          <span className="text-sm noselect text-gray-500">{skill.years}</span>
+                          <span className="text-sm noselect font-medium text-gray-900">{skill.level}%</span>
                         </div>
                       </div>
 
                       <Progress value={skill.level} className="h-2" />
 
-                      <p className="text-sm text-gray-600">{skill.description}</p>
+                      <p className="text-sm noselect text-gray-600">{skill.description}</p>
                     </div>
                   ))}
                 </CardContent>
@@ -104,25 +104,25 @@ export function Skills() {
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-blue-600 mb-2">6+</div>
-                <div className="text-gray-900 font-semibold mb-1">Years Experience</div>
-                <div className="text-sm text-gray-600">In backend development</div>
+                <div className="text-3xl font-bold noselect text-blue-600 mb-2">6+</div>
+                <div className="text-gray-900 noselect font-semibold mb-1">Years Experience</div>
+                <div className="text-sm noselect text-gray-600">In backend development</div>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
-                <div className="text-gray-900 font-semibold mb-1">Technologies</div>
-                <div className="text-sm text-gray-600">Actively working with</div>
+                <div className="text-3xl font-bold noselect text-green-600 mb-2">10+</div>
+                <div className="text-gray-900 noselect font-semibold mb-1">Technologies</div>
+                <div className="text-sm noselect text-gray-600">Actively working with</div>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-purple-600 mb-2">200+</div>
-                <div className="text-gray-900 font-semibold mb-1">Projects Completed</div>
-                <div className="text-sm text-gray-600">Across various industries</div>
+                <div className="text-3xl noselect font-bold text-purple-600 mb-2">200+</div>
+                <div className="text-gray-900 noselect font-semibold mb-1">Projects Completed</div>
+                <div className="text-sm noselect text-gray-600">Across various industries</div>
               </CardContent>
             </Card>
           </div>

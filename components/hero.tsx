@@ -47,6 +47,7 @@ export function Hero() {
           <div className="flex justify-center space-x-6 mb-12">
             <Link
               href="https://github.com/Zffu"
+              rel="nofollow noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 transition-colors"
               aria-label="GitHub Profile"
             >

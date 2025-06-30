@@ -6,9 +6,9 @@ import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 
 export const metadata: Metadata = {
-  title: "Zffu | Backend Low-Level Developer",
+  title: "Zffu | Low-Level Code and Projects",
   description:
-    "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    "A backend/low-level developer that has years of experience and skills in development, focusing on Assembly and C projects and sometimes Java and Spigot projects",
   keywords:
     "backend developer, C, assembly, machine code, C developer, machine code developer, Assembly developer",
   authors: [{ name: "Zffu" }],
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://zffu.dev",
     title: "Zffu - Low-Level Backend Developer",
-    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    description: "A backend/low-level developer that has years of experience and skills in development, focusing on Assembly and C projects and sometimes Java and Spigot projects",
     siteName: "Zffu Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Zffu - Low-Level Backend Developer",
-    description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+    description: "A backend/low-level developer that has years of experience and skills in development, focusing on Assembly and C projects and sometimes Java and Spigot projects",
     creator: "@zffumc",
   },
   robots: {
@@ -46,7 +46,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Zffu",
   jobTitle: "Backend & Low-Level Developer",
-  description: "Experienced backend developer specializing in low-level programming such as C, Assembly and Machine code!",
+  description: "A backend/low-level developer that has years of experience and skills in development, focusing on Assembly and C projects and sometimes Java and Spigot projects",
   url: "https://zffu.dev",
   sameAs: ["https://github.com/Zffu"],
   knowsAbout: ["JavaScript", "TypeScript", "Backend Developpment", "C", "Assembly", "x86", "Machine Code", "Python", "Java"],

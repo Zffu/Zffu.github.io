@@ -18,6 +18,7 @@ export function Footer() {
               <div className="flex space-x-4">
                 <Link
                   href="https://github.com/Zffu"
+                  rel="nofollow noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                   aria-label="GitHub Profile"
                 >
