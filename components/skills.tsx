@@ -6,7 +6,6 @@ export function Skills() {
     {
       title: "Low-Level Development",
       skills: [
-        { name: "Java", level: 100, years: "6+ years", description: "Advanced Java ASM manipulation and JVM tricks." },
         { name: "C", level: 95, years: "1+ year", description: "Advanced knowledge of C, it's concepts and how to write optimized code with it" },
         { name: "Assembly", level: 65, years: "5+ months", description: "Understanding of the instruction sets, registers and general Assembly code" },
         { name: "x86 Machine Code", level: 45, years: "2+ months", description: "Writing of an custom Assembler for the x86 architecture, understanding of registers, ModRM bytes, REX prefixes, and instructions" },
@@ -20,6 +19,18 @@ export function Skills() {
         { name: "NodeJS / Typescript", level: 35, years: "1+ year (Not Actively coding)", description: "Usage of NodeJS to write APIs for my various projects" },     
         { name: "Express.js", level: 85, years: "1+ years", description: "Usage of Express to write APIs for my various projects." }
       ],
+    },
+    {
+      title: "Minecraft Development", 
+      skills: [
+        { name: "Spigot & Bukkit", level: 100, years: "6+ years", description: "Full understanding of the Spigot and Bukkit API for all versions" },
+        { name: "NMS (Minecraft Server)", level: 100, years: "4+ years", description: "Deep knowledge of NMS, created a custom NMS fork, packet handling, pathfinding, ..." },
+        { name: "Netty", level: 85, years: "3+ years", description: "Fast packet interception for an anticheat" },
+        { name: "MCP Legacy (1.7-1.12.2)", level: 95, years: "3+ years", description: "Coded multiple clients interacting with MCP, fully replicated the movement engine with 2.22E-16 accuracy" },
+        { name: "MCP Post (1.13-current)", level: 70, years: "2+ years", description: "Made a client interacting with all versions of MCP trough patches and ASM" }
+        { name: "Minestom", level: 85, years: "1+ year", description: "Multiple advanced projects using Minestom" },
+        { name: "Bungeecord & Proxies", level: 75, years: "3+ years", description: "Multiple plugins and forks of Minecraft server proxies" }, 
+        { name: "Minecraft Java Protocol", level: 85, years: "3+ years", description: "Great experience with the Mojang protocol for anticheats, projects and also custom server softwares" }
     },
     {
       title: "Tools & DevOps",
