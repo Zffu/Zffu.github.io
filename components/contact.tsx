@@ -91,7 +91,7 @@ export function Contact() {
                 <h4 className="font-semibold text-gray-900 mb-4">Response Time</h4>
                 <p className="text-gray-600">
                   I typically respond to emails within 24 hours during business days. For urgent matters, feel free to
-                  call or text.
+                  contact me on Discord or Instagram.
                 </p>
               </div>
             </div>
