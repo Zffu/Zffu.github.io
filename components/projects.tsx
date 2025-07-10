@@ -8,6 +8,21 @@ import Link from "next/link"
 export function Projects() {
   const projects = [
     {
+      title: "ZAC (Third Generation)", 
+      description: "A latency compensated, efficient prediction anticheat for Minecraft: Java & Bedrock (Soon) with 2.22E-16 (maximum) precision with a perfect reimplementation of the Minecraft movement engine",
+      image: "",
+      technologies: ["Java", "Spigot", "NMS", "Netty", "MCP Legacy", "New MPC"], 
+      githubUrl: "https://zac.zffu.dev",
+      featured: true
+    },
+    {
+      title: "Cavernfall",
+      description: "Cavernfall is an upcoming video game made by Cavernfall Interactives",
+      image: "",
+      technologies: ["Godot", "GDScript", "C#", "C++", "C"],
+      githubUrl: "https://github.com/CavernfallDev",
+      featured: true
+    {
       title: "Quickfall",
       description:
         "A fast, uncomplete programming language that I made while learning C",
