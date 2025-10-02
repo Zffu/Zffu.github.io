@@ -18,7 +18,7 @@ jobs:
           node-version: '20'
 
       - name: Installd deps
-        run: npm ci
+        run: npm i
       
       - name: build
         run: next export
