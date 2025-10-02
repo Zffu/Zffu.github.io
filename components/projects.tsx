@@ -22,14 +22,14 @@ export function Projects() {
       technologies: ["Godot", "GDScript", "C#", "C++", "C"],
       githubUrl: "https://github.com/CavernfallDev",
       featured: true
+    },
     {
       title: "Quickfall",
-      description:
-        "A fast, uncomplete programming language that I made while learning C",
+      description: "A fast, uncomplete programming language that I made while learning C",
       image: "/qf.png",
       technologies: ["C", "Assembly", "x86"],
       githubUrl: "https://github.com/Quickfall/quickfall",
-      featured: true,
+      featured: true
     },
     {
       title: "Mirage",

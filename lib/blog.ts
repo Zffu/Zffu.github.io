@@ -12,12 +12,8 @@ export interface BlogPost {
 
 // Sample blog posts data - in a real app, these would come from files or a CMS
 export const blogPosts: BlogPost[] = [
-  {
-    slug: "zac",
-    title: "ZAC (Zffu's Anticheat) 3rd generation - Risky but worth it gamble",
-    date: "07-16-2025",
-    excerpt: "",
-    content: ```
-
-```
 ]
+
+export function getAllPosts(): BlogPost[] {
+  return blogPosts
+}
