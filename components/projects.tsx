@@ -10,7 +10,7 @@ export function Projects() {
     {
       title: "ZAC (Third Generation)", 
       description: "A latency compensated, efficient prediction anticheat for Minecraft: Java & Bedrock (Soon) with 2.22E-16 (maximum) precision with a perfect reimplementation of the Minecraft movement engine",
-      image: "",
+      image: "/projects/zac.png",
       technologies: ["Java", "Spigot", "NMS", "Netty", "MCP Legacy", "New MPC"], 
       githubUrl: "https://zac.zffu.dev",
       featured: true
@@ -18,7 +18,7 @@ export function Projects() {
     {
       title: "Cavernfall",
       description: "Cavernfall is an upcoming video game made by Cavernfall Interactives",
-      image: "",
+      image: "/projects/cavernfall.png",
       technologies: ["Godot", "GDScript", "C#", "C++", "C"],
       githubUrl: "https://github.com/CavernfallDev",
       featured: true
@@ -26,17 +26,17 @@ export function Projects() {
     {
       title: "Quickfall",
       description: "A fast, uncomplete programming language that I made while learning C",
-      image: "/qf.png",
+      image: "/projects/qf.png",
       technologies: ["C", "Assembly", "x86"],
-      githubUrl: "https://github.com/Quickfall/quickfall",
+      githubUrl: "https://github.com/Quickfall/quickfall-old",
       featured: true
     },
     {
-      title: "Mirage",
-      description: "Mirage is an attempt at making an Kernel while me learning C",
-      image: "https://images.prismic.io/whyzz/08b56996-8efd-468a-b474-1f6583261919_mirage.jpg?auto=compress%2Cformat&w=900",
-      technologies: ["C", "Assembly", "BootLoading"],
-      githubUrl: "https://github.com/Zffu/mirage",
+      title: "Kernel",
+      description: "An attempt at making an Kernel",
+      image: "/projects/kernel.png",
+      technologies: ["C", "Assembly", "BootLoading", "Qemu"],
+      githubUrl: "https://github.com/Zffu/Kernel",
       featured: true
     },
     {
@@ -45,7 +45,7 @@ export function Projects() {
       image: "",
       technologies: ["C", "Assembly", "x86", "Machine Code"],
       githubUrl: "https://github.com/SprintLanguage/asm",
-      featured: true
+      featured: false
     },
     {
       title: "Sprint",
@@ -53,12 +53,12 @@ export function Projects() {
       image: "",
       technologies: ["C", "SprintASM", "Assembly", "x86", "Machine Code"],
       githubUrl: "https://github.com/SprintLanguage",
-      featured: true
+      featured: false
     },
     {
       title: "Hexastrike",
       description: "Hexastrike is a simplicity and efficiency driven Socket server framework written in C. It was able to handle over 100k CPS (Client per Second) with minimum latency",
-      image: "",
+      image: "/projects/hexastrike.png",
       technologies: ["C", "Sockets"],
       githubUrl: "https://github.com/Zffu/Hexastrike",
       featured: true
@@ -74,7 +74,7 @@ export function Projects() {
     {
       title: "JDump",
       description: "A little Github CI script allowing you to generate a static maven repository interface for your projects",
-      image: "",
+      image: "/projects/jdump.png",
       technologies: ["Github CI", "HTML", "Javascript", "Shell"],
       githubUrl: "https://github.com/Zffu/JDump"
     },
@@ -89,10 +89,10 @@ export function Projects() {
     {
       title: "Thunderstrike",
       description: "Thunderstrike is a custom Minecraft server software",
-      image: "",
+      image: "/projects/thunderstrike.png",
       technologies: ["Java", "NIO", "Sockets"],
       githubUrl: "https://github.com/Zffu/Thunderstrike",
-      featured: false
+      featured: true
     },
     {
       title: "Commons",
@@ -103,12 +103,12 @@ export function Projects() {
       featured: false
     },
     {
-      title: "EzNPCs",
-      description: "EzNPCs is a minecraft plugin aiming to be a optimized and customizable npc plugin",
-      image: "",
-      technologies: ["Java"],
-      githubUrl: "https://github.com/Zffu/EzNPCs",
-      featured: false
+      title: "Hardened",
+      description: "Minecraft node-based command creation!",
+      image: "/projects/hardened.png",
+      technologies: ["Java", "Spigot", "Minecraft"],
+      githubUrl: "https://github.com/Zffu/Hardened",
+      featured: true
     },
     {
       title: "CrimsonDB",
@@ -121,15 +121,15 @@ export function Projects() {
     {
       title: "BuildTickets",
       description: "An attempt at making an optimized and easy to use database for Minecraft plugins (and more).",
-      image: "",
+      image: "/projects/buildtickets.png",
       technologies: ["Java", "Spigot", "NMS"],
       githubUrl: "https://github.com/Zffu/BuildTickets",
-      featured: false
+      featured: true
     },
     {
       title: "Crystal",
       description: "Crystal is a cross-software minecraft advanced animation lib.",
-      image: "",
+      image: "https://raw.githubusercontent.com/Zffu/Crystal/refs/heads/master/assets/logo.gif",
       technologies: ["Java", "Spigot", "Minestom", "NMS"],
       githubUrl: "https://github.com/Zffu/Crystal",
       featured: false
@@ -143,38 +143,6 @@ export function Projects() {
       featured: false,
     }, 
     {
-      title: "DeathTax",
-      description: "A Small plugin to make players pay a fee when they die (for a spigot thread)",
-      image: "",
-      technologies: ["Java", "Spigot"],
-      githubUrl: "https://github.com/Zffu/DeathTax",
-      featured: false
-    },
-    {
-      title: "CartographyEvent",
-      description: "A Small example plugin for a spigot forum thread to add events for the cartography table",
-      image: "",
-      technologies: ["Java", "Spigot"],
-      githubUrl: "https://github.com/Zffu/CartographyEvent",
-      featured: false
-    },
-    {
-      title: "InvisibleDeaths",
-      description: "A Plugin to change player's death messages when killed by an invisible player. (Spigot forum request)",
-      image: "",
-      technologies: ["Java", "Spigot"],
-      githubUrl: "https://github.com/Zffu/InvisibleDeaths",
-      featured: false
-    },
-    {
-      title: "SimpleNPCs", 
-      description: "A Simple way to add npcs into Spigot Plugins and Minecraft!",
-      image: "",
-      technologies: ["Java", "Spigot", "NMS"],
-      githubUrl: "https://github.com/Zffu/SimpleNPCs",
-      featured: false
-    },
-    {
       title: "SkyblockEssentials", 
       description: "SkyblockEssentials is a 1.8.9 forge mod to add essentials features to your skyblock experience",
       image: "",
@@ -183,17 +151,9 @@ export function Projects() {
       featured: false
     },
     {
-      title: "SimpleHolograms", 
-      description: "SimpleHolorams is a simple way to make great holograms with the plugin or the api.",
-      image: "",
-      technologies: ["Java", "Spigot", "NMS"],
-      githubUrl: "https://github.com/Zffu/SkyblockEssentials",
-      featured: false
-    },
-    {
       title: "NoKick", 
       description: "Allows you to send a title to the player instead of kicking it",
-      image: "",
+      image: "/projects/nokick.png",
       technologies: ["Java", "Spigot"],
       githubUrl: "https://github.com/Zffu/NoKick",
       featured: false
