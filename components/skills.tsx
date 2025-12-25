@@ -8,6 +8,7 @@ export function Skills() {
       skills: [
         { name: "C", level: 95, years: "1+ year", description: "Advanced knowledge of C, it's concepts and how to write optimized code with it" },
         { name: "Assembly", level: 65, years: "5+ months", description: "Understanding of the instruction sets, registers and general Assembly code" },
+        { name: "C++", level: 80, years: "1+ year", description: "Usage of C++ in a complex codebase for the creation of a server engine for Cavernfall, including complex structures, thread safety and robust APIs" },
         { name: "x86 Machine Code", level: 45, years: "2+ months", description: "Writing of an custom Assembler for the x86 architecture, understanding of registers, ModRM bytes, REX prefixes, and instructions" },
       ]
     },
