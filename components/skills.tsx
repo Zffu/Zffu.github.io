@@ -6,6 +6,7 @@ export function Skills() {
     {
       title: "Low-Level Development",
       skills: [
+        { name: "Rust", level: 35, years: "1 month", description: "Lifetimes & the basics" }, 
         { name: "C", level: 95, years: "1+ year", description: "Advanced knowledge of C, it's concepts and how to write optimized code with it" },
         { name: "Assembly", level: 65, years: "5+ months", description: "Understanding of the instruction sets, registers and general Assembly code" },
         { name: "C++", level: 80, years: "1+ year", description: "Usage of C++ in a complex codebase for the creation of a server engine for Cavernfall, including complex structures, thread safety and robust APIs" },
@@ -64,8 +65,7 @@ export function Skills() {
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Skills & Expertise</h2>
 
           <p className="text-lg text-gray-700 text-center mb-16 max-w-3xl mx-auto">
-            Here's a detailed breakdown of my technical skills and proficiency levels. I'm constantly learning and
-            improving to stay current with the latest technologies and best practices.
+            Here's a detailed breakdown of my knowledge and skills on the different languages. Please note that I do not practice every single one of them daily.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -117,16 +117,16 @@ export function Skills() {
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold noselect text-blue-600 mb-2">6+</div>
+                <div className="text-3xl font-bold noselect text-blue-600 mb-2">7+</div>
                 <div className="text-gray-900 noselect font-semibold mb-1">Years Experience</div>
-                <div className="text-sm noselect text-gray-600">In backend development</div>
+                <div className="text-sm noselect text-gray-600">In development</div>
               </CardContent>
             </Card>
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold noselect text-green-600 mb-2">10+</div>
-                <div className="text-gray-900 noselect font-semibold mb-1">Technologies</div>
+                <div className="text-3xl font-bold noselect text-green-600 mb-2">15+</div>
+                <div className="text-gray-900 noselect font-semibold mb-1">Languages & Frameworks</div>
                 <div className="text-sm noselect text-gray-600">Actively working with</div>
               </CardContent>
             </Card>
