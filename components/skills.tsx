@@ -133,9 +133,9 @@ export function Skills() {
 
             <Card className="text-center">
               <CardContent className="p-6">
-                <div className="text-3xl noselect font-bold text-purple-600 mb-2">200+</div>
-                <div className="text-gray-900 noselect font-semibold mb-1">Projects Completed</div>
-                <div className="text-sm noselect text-gray-600">Across various industries</div>
+                <div className="text-3xl noselect font-bold text-purple-600 mb-2">7200+</div>
+                <div className="text-gray-900 noselect font-semibold mb-1">Commits pushed</div>
+                <div className="text-sm noselect text-gray-600">Across various repositories</div>
               </CardContent>
             </Card>
           </div>
