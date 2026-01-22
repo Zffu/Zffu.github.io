@@ -19,7 +19,7 @@ export function Projects() {
       title: "Cavernfall",
       description: "Cavernfall is an upcoming video game made by Cavernfall Interactives",
       image: "/projects/cavernfall.png",
-      technologies: ["Godot", "GDScript", "C#", "C++", "C"],
+      technologies: ["Godot", "GDScript", "C#", "C++", "C", "Rust"],
       githubUrl: "https://github.com/CavernfallDev",
       featured: true
     },
@@ -38,6 +38,13 @@ export function Projects() {
       technologies: ["C", "Assembly", "BootLoading", "Qemu"],
       githubUrl: "https://github.com/Zffu/Kernel",
       featured: true
+    },
+    {
+      title: "HollowBoard",
+      description: "HollowBoard is a reimagined way of creating scoreboards in Minecraft: Java Edition",
+      technologies: ["Java", "Spigot", "PacketEvents", "Bungeecord (Soon)", "Velocity (Soon)", "Folia (Soon)", "Minestom (Soon)"],
+      githubUrl: "https://github.com/Zffu/HollowBoard",
+      featured: false
     },
     {
       title: "Sprint Assembly",
